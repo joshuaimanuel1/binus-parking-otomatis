@@ -1,0 +1,10 @@
+# Mengabaikan folder node_modules (di mana dependensi npm disimpan)
+node_modules/
+
+# Mengabaikan file konfigurasi environment yang bersifat sensitif
+.env
+
+# Mengabaikan folder build/ dan dist/ yang dihasilkan dari proses build aplikasi
+build/
+dist/
+ 
