@@ -4,21 +4,25 @@ Sistem Parkir Otomatis BINUS adalah aplikasi untuk mengelola parkir di kampus BI
 
 ## Fitur
 
-- **Pendaftaran RFID**: Pengguna dapat mendaftar menggunakan RFID untuk mendapatkan slot parkir.
-- **Deteksi Kendaraan**: Kamera digunakan untuk mendeteksi keberadaan kendaraan di slot parkir.
-- **Pembaharuan Status Slot**: Slot parkir akan diperbarui secara otomatis berdasarkan apakah slot tersebut terisi atau kosong.
+- **Manajemen Slot Parkir**: Mengelola slot parkir dan status terisi/tersedia.
+- **Deteksi Kendaraan**: Menggunakan kamera untuk mendeteksi kendaraan yang parkir.
+- **RFID**: Menggunakan RFID untuk memverifikasi kendaraan dan mengelola slot parkir.
 
-## Teknologi
+## Teknologi yang Digunakan
 
-- **Backend**: Node.js, Express.js, MongoDB (atau MySQL sesuai preferensi)
 - **Frontend**: React.js
-- **Deteksi Kendaraan**: TensorFlow.js dengan model COCO-SSD untuk deteksi objek.
+- **Backend**: Node.js, Express.js
 - **Database**: MySQL
-- **Penyimpanan dan Keamanan**: Git untuk version control, JSON Web Tokens (JWT) untuk autentikasi pengguna.
+- **Model Deteksi Kendaraan**: TensorFlow.js (coco-ssd)
 
 ## Instalasi
 
-1. Clone repositori ini:
+1. Clone repository ini
+2. Jalankan perintah berikut untuk menginstal dependensi di backend dan frontend:
+
+   **Backend**:
+
    ```bash
-   git clone https://github.com/username/binus-parking-otomatis.git
+   cd backend
+   npm install
    ```
