@@ -132,4 +132,4 @@ Dokumen ini menjelaskan **arsitektur sistem**, **komponen utama**, dan bagaimana
 
 ---
 
-Ingin dilanjutkan ke `setup-guide.md`?
+
