@@ -1,7 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const slotController = require("../controllers/slotController");
+const {
+  getAllSlots,
+  updateSlotStatus,
+} = require("../controllers/slotController");
 
-router.post("/update", slotController.updateSlotStatus);
+// Endpoint untuk mengambil semua slot
+router.get("/all-slots", getAllSlots);
+
+// Endpoint untuk update status slot (kosong/terisi)
+router.post("/update-slot", updateSlotStatus);
 
 module.exports = router;

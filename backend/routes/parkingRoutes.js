@@ -1,8 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const parkingController = require("../controllers/parkingController");
+const {
+  masukParkir,
+  keluarParkir,
+} = require("../controllers/parkingController");
 
-router.post("/allocate", parkingController.getAvailableSlot);
-router.get("/all-slots", parkingController.getAllSlots);
+// Endpoint untuk masuk parkir
+router.post("/parking", masukParkir);
+
+// Endpoint untuk keluar parkir
+router.post("/keluar", keluarParkir);
 
 module.exports = router;
