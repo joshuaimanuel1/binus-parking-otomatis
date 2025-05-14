@@ -158,7 +158,7 @@ Memperbarui status `is_occupied` dari sebuah slot parkir.
 
 ## ✍️ Author
 
-- Project oleh: **Kris / joshuaimanuel1**
+- Project oleh: **joshuaimanuel1**
 - Repositori GitHub: [github.com/joshuaimanuel1/binus-parking-otomatis](https://github.com/joshuaimanuel1/binus-parking-otomatis)
 
 ```
