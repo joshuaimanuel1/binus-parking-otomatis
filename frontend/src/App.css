@@ -1,1 +1,88 @@
- 
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.rfid-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.get-slot-btn,
+.exit-slot-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #0047ab;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.get-slot-btn:hover,
+.exit-slot-btn:hover {
+  background-color: #002e73;
+}
+
+.slot {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+.available-slots {
+  margin-top: 40px;
+}
+
+.slot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.slot-box {
+  width: 160px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  transition: transform 0.2s ease;
+}
+
+.slot-box.available {
+  background-color: #d4fdd6;
+  border: 2px solid #36b94c;
+}
+
+.slot-box.occupied {
+  background-color: #ffd4d4;
+  border: 2px solid #e33c3c;
+}
+
+.slot-box:hover {
+  transform: scale(1.03);
+}
+
+.camera-feed {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 8px;
+}

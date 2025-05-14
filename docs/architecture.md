@@ -131,5 +131,3 @@ Dokumen ini menjelaskan **arsitektur sistem**, **komponen utama**, dan bagaimana
 - Modul dapat diperluas untuk mendukung lebih banyak lantai parkir, sistem reservasi, dan login pengguna.
 
 ---
-
-Ingin dilanjutkan ke `setup-guide.md`?

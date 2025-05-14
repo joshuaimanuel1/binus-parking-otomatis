@@ -1,14 +1,13 @@
+// backend/routes/parkingRoutes.js
+
 const express = require("express");
 const router = express.Router();
-const {
-  masukParkir,
-  keluarParkir,
-} = require("../controllers/parkingController");
+const parkingController = require("../controllers/parkingController");
 
 // Endpoint untuk masuk parkir
-router.post("/parking", masukParkir);
+router.post("/masuk", parkingController.parkVehicle);
 
 // Endpoint untuk keluar parkir
-router.post("/keluar", keluarParkir);
+router.post("/keluar", parkingController.leaveVehicle);
 
 module.exports = router;
