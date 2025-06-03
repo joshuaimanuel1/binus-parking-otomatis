@@ -4,16 +4,16 @@ const parkingRoutes = require("./routes/parkingRoutes");
 const slotRoutes = require("./routes/slotRoutes");
 
 const app = express();
-const port = 5000;
+const port = 3001; // disesuaikan dengan frontend proxy
 
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Gunakan route yang konsisten dengan frontend
 app.use("/api/parking", parkingRoutes);
-app.use("/api/slot", slotRoutes);
+app.use("/api/all-slots", slotRoutes); // disesuaikan agar cocok dengan axios.get("/api/all-slots")
 
-// Run server
+// Server aktif
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
 });

@@ -14,9 +14,7 @@ function App() {
 
   const handleGetSlot = async () => {
     try {
-      const response = await axios.post("http://localhost:3001/api/parking", {
-        rfid,
-      });
+      const response = await axios.post("/api/parking", { rfid });
       setAssignedSlot(response.data.slot);
       fetchSlots(); // Refresh slot data
     } catch (error) {
@@ -30,10 +28,10 @@ function App() {
 
   const fetchSlots = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/api/all-slots");
+      const response = await axios.get("/api/all-slots");
       setSlots(response.data);
     } catch (error) {
-      console.error("Error fetching slots:", error);
+      console.error("Error fetching slots:", error.message);
     }
   };
 
