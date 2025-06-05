@@ -18,7 +18,6 @@ function KeluarParkir() {
         console.error("Error:", error);
       });
   };
-
   // Fungsi untuk keluar parkir
   const handleExitParking = () => {
     setLoading(true);

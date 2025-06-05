@@ -1,19 +1,19 @@
 const express = require("express");
 const cors = require("cors");
-const parkingRoutes = require("./routes/parkingRoutes");
-const slotRoutes = require("./routes/slotRoutes");
-
 const app = express();
-const port = 3001; // disesuaikan dengan frontend proxy
+const PORT = 5000;
+
+// Coba koneksi ke database
+const db = require("./db"); // Import db.js
 
 app.use(cors());
 app.use(express.json());
 
-// Gunakan route yang konsisten dengan frontend
-app.use("/api/parking", parkingRoutes);
-app.use("/api/all-slots", slotRoutes); // disesuaikan agar cocok dengan axios.get("/api/all-slots")
+// ✅ Import router yang berisi semua endpoint /api
+const parkingRoutes = require("./routes/parking");
+app.use("/api", parkingRoutes); // Semua endpoint diakses melalui prefix /api
 
-// Server aktif
-app.listen(port, () => {
-  console.log(`Server berjalan di http://localhost:${port}`);
+// ✅ Cek apakah server berjalan dengan baik
+app.listen(PORT, () => {
+  console.log(`✅ Server berjalan di http://localhost:${PORT}`);
 });
