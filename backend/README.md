@@ -31,9 +31,10 @@ Backend untuk sistem parkir otomatis menggunakan Node.js, Express, dan MySQL.
    ```
 
 ## Rute API
-
+```
 -POST /api/parking - Input RFID untuk masuk parkir
 -POST /api/exit - Input RFID untuk keluar parkir
 -POST /api/parking/allocate: Alokasikan slot parkir.
 -GET /api/parking/all-slots: Dapatkan semua slot parkir.
 -POST /api/slot/update: Perbarui status slot parkir.
+```
